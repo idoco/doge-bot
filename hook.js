@@ -48,8 +48,6 @@ module['exports'] = function echoHttp(hook) {
 				message: messageData,
 			}
 		}, function(error, response, body) {
-			console.log("response");
-			console.log(JSON.stringify(response));
 			if (error) {
 				console.log('Error sending message: ', error);
 			} else if (response.body.error) {
